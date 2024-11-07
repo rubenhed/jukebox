@@ -1,0 +1,4 @@
+<% @result.each do |info| %>
+  Album: <a href="../albums/<%= info["id"] %>"><%= info["title"] %></a><br>
+  <%= "Genre: #{info["name"]}" %><br><br>
+<% end %>
